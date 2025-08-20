@@ -1,64 +1,63 @@
-![PoupApp](thumb.png)
+# React com Typescript: Aplique Hooks e Context API Tipados
 
-# 💰 PoupApp
+Este repositório contém o código desenvolvido durante o curso "React com Typescript: Aplique Hooks e Context API Tipados" da Alura. O objetivo principal do curso é aprimorar a estrutura e a acessibilidade de uma aplicação React utilizando Typescript, Hooks e Context API.
 
-O PoupApp é uma plataforma de gerenciamento financeiro voltada para ajudar usuários a organizar suas finanças. Focado na simplicidade, o PoupApp permite que os usuários acompanhem seus gastos, definam metas financeiras e visualizem seu progresso através de gráficos dinâmicos. 
+## Sobre o Curso
 
-Com funcionalidades que incentivam o controle de despesas e a organização do orçamento diário, o PoupApp se torna o parceiro ideal para quem busca saúde financeira e realização de objetivos pessoais.
+O curso aborda a refatoração de componentes React para otimizar o gerenciamento de estados e a manipulação do DOM, com foco na melhoria da acessibilidade e na eliminação de padrões como "prop drilling".
 
-<p align="center">
-  <img src="./poupapp-home.png" alt="Página Inicial" width="30%" style="vertical-align: top; margin-right: 20px;" />
-</p>
+### Tópicos Abordados
 
-## 🔨 Funcionalidades do projeto
+*   **Introdução ao PolpaApp:** Apresentação da tela inicial e da necessidade de centralização de dados e estados.
+*   **Funcionalidade de Adição de Transações:** Implementação de uma modal para adicionar transações, com foco na correção de problemas de acessibilidade.
+*   **Acessibilidade da Modal:** Refatoração da modal para torná-la mais acessível, utilizando React e TypeScript.
+*   **Refatoração do Componente Modal:** Remoção de propriedades desnecessárias e otimização do componente para manipulação de abertura e fechamento.
+*   **Implementação do `forwardRef`:** Utilização do `forwardRef` para expor o elemento `dialogElement` ao componente pai.
+*   **Definição da Interface `ModalHandle`:** Criação de uma interface para lidar com os métodos de controle da modal.
 
-O PoupApp oferece as seguintes funcionalidades:
+## Estrutura do Código
 
-- Acompanhar o orçamento diário e manter o controle das suas despesas.
-- Realizar transações de maneira prática, adicionando despesas e receitas.
-- Analisar seus gastos por meio de gráficos dinâmicos, categorizando as despesas para melhor entendimento.
+O código está organizado da seguinte forma:
 
-## ✔️ Técnicas e tecnologias utilizadas
+*   `src/`: Contém o código fonte da aplicação.
+*   `components/`: Inclui os componentes React reutilizáveis.
+*   `Modal/`: Componente específico da modal, com seus respectivos arquivos de estilo e lógica.
+*   `index.tsx`: Arquivo principal do componente modal, onde a refatoração é realizada.
 
-O projeto foi desenvolvido utilizando as seguintes tecnologias:
+## Como Executar o Projeto
 
-- `Typescript` - Linguagem que adiciona tipagem estática ao JavaScript.
-- `React.js` - Biblioteca para construção de interfaces dinâmicas.
-- `Vite` - Ferramenta de construção rápida para desenvolvimento com JavaScript moderno.
-- `Styled-components` - Para estilização de componentes com CSS-in-JS.
-- `Context API` - Gerenciamento de estado de forma reativa.
-- `React Router` - Para navegação entre páginas da aplicação.
-- `Recharts` - Para criação e visualização de gráficos.
-- `Figma` - Para prototipagem e design visual do projeto.
+Para executar este projeto, siga as instruções abaixo:
 
-E outras dependências e ferramentas auxiliares.
+1.  Clone este repositório:
 
-## 🛠️ Abrir e rodar o projeto
+    ```bash
+    git clone [URL do Repositório]
+    ```
 
-Para rodar o projeto em sua máquina local, siga estes passos:
+2.  Navegue até o diretório do projeto:
 
-1. Baixe o repositório do projeto para o seu computador.
+    ```bash
+    cd [nome do diretório]
+    ```
 
-2. Navegue até a pasta do projeto, extraia os arquivos e abra no seu editor de código favorito. 
-
-3. Instale as dependências executando:
+3.  Instale as dependências:
 
     ```bash
     npm install
     ```
 
-4. Para iniciar o servidor de desenvolvimento, utilize o comando:
+4.  Inicie o servidor de desenvolvimento:
 
     ```bash
     npm run dev
     ```
 
-5. O projeto estará disponível em http://localhost:5173.
+    O projeto estará disponível em `http://localhost:3000`.
 
-## 📚 Mais informações do curso
+## Contribuição
 
-Gostou do projeto e quer conhecer mais?
+Contribuições são bem-vindas! Sinta-se à vontade para abrir *issues* e enviar *pull requests* para melhorar este projeto.
 
-O design e protótipo deste projeto podem ser encontrados [aqui](https://www.figma.com/community/file/1468989433664551328). Este projeto é fictício e sem fins lucrativos. 
+## Licença
 
-Aproveite o desenvolvimento e aprimoramento do PoupApp!
+Este projeto está licenciado sob a [Licença MIT](LICENSE).
