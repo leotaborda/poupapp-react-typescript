@@ -21,6 +21,8 @@ const GlobalStyle = createGlobalStyle`
   --cor-secundaria-receita: #d6ff62;
   --cor-secundaria-despesa: #f87828;
 
+  --cor-vermelha: #ff1f1f;
+
   --border-radius-s: 0.5rem;
   --border-radius-m: 1rem;
   --border-radius-l: 1.5rem;
