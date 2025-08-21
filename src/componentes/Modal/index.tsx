@@ -9,8 +9,8 @@ import {
 import Botao from "../Botao";
 
 interface ModalHandle {
-  open: () => void
-  close: () => void
+  open: () => void;
+  close: () => void;
 }
 
 interface ModalProps {
