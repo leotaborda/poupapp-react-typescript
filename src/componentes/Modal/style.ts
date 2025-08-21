@@ -1,18 +1,5 @@
 import styled from "styled-components";
 
-export const ModalOverlay = styled.div`
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(245, 245, 245, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: auto;
-`;
-
 export const ModalContainer = styled.dialog`
   background-color: var(--cor-neutra-dark);
   border-radius: var(--border-radius-s);
@@ -22,6 +9,10 @@ export const ModalContainer = styled.dialog`
   color: var(--cor-neutra-light);
   position: relative;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+
+  &::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
 `;
 
 export const ModalHeader = styled.div`
@@ -50,6 +41,12 @@ export const CloseButton = styled.button`
   color: var(--cor-neutra-light);
   font-size: var(--fonte-xl);
   cursor: pointer;
+  transition: transform 0.2s;
+
+  &:hover {
+    color: var(--cor-vermelha);
+    transform: scale(1.05);
+  }
 `;
 
 export const ButtonGroup = styled.div`
