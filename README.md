@@ -52,12 +52,9 @@ Para executar este projeto, siga as instruções abaixo:
     npm run dev
     ```
 
-    O projeto estará disponível em `http://localhost:3000`.
+    O projeto estará disponível em `http://localhost:5173`.
 
 ## Contribuição
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir *issues* e enviar *pull requests* para melhorar este projeto.
 
-## Licença
-
-Este projeto está licenciado sob a [Licença MIT](LICENSE).
