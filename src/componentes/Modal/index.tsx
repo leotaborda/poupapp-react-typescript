@@ -4,11 +4,10 @@ import {
   CloseButton,
   ModalContainer,
   ModalHeader,
-  ModalOverlay,
 } from "./style";
 import Botao from "../Botao";
 
-interface ModalHandle {
+export interface ModalHandle {
   open: () => void;
   close: () => void;
 }
@@ -41,30 +40,30 @@ const Modal = forwardRef<ModalHandle, ModalProps>(
     };
 
     return (
-      <ModalOverlay>
-        <ModalContainer ref={dialogRef} onClick={aoClicarForaModal}>
-          <ModalHeader>
-            <div>
-              {icon}
-              {titulo}
-            </div>
-            <CloseButton onClick={fechaModal}>✕</CloseButton>
-          </ModalHeader>
-          {children}
-          <ButtonGroup>
-            <Botao $variante="secundario" onClick={fechaModal}>Cancelar</Botao>
-            <Botao
-              $variante="primario"
-              onClick={() => {
-                aoClicar();
-                fechaModal();
-              }}
-            >
-              Adicionar
-            </Botao>
-          </ButtonGroup>
-        </ModalContainer>
-      </ModalOverlay>
+      <ModalContainer ref={dialogRef} onClick={aoClicarForaModal}>
+        <ModalHeader>
+          <div>
+            {icon}
+            {titulo}
+          </div>
+          <CloseButton onClick={fechaModal}>✕</CloseButton>
+        </ModalHeader>
+        {children}
+        <ButtonGroup>
+          <Botao $variante="secundario" onClick={fechaModal}>
+            Cancelar
+          </Botao>
+          <Botao
+            $variante="primario"
+            onClick={() => {
+              aoClicar();
+              fechaModal();
+            }}
+          >
+            Adicionar
+          </Botao>
+        </ButtonGroup>
+      </ModalContainer>
     );
   }
 );
