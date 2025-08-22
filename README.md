@@ -46,13 +46,19 @@ Para executar este projeto, siga as instruções abaixo:
     npm install
     ```
 
-4.  Inicie o servidor de desenvolvimento:
+4.  Inicie a aplicação de desenvolvimento:
 
     ```bash
     npm run dev
     ```
 
+5.  Inicie o servidor para a api rodar localmente:
+    ```bash
+    npm run server
+    ```
+
     O projeto estará disponível em `http://localhost:5173`.
+    O servidor estará disponível em `http://localhost:5000`.
 
 ## Contribuição
 
