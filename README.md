@@ -14,6 +14,10 @@ O curso aborda a refatoração de componentes React para otimizar o gerenciament
 *   **Refatoração do Componente Modal:** Remoção de propriedades desnecessárias e otimização do componente para manipulação de abertura e fechamento.
 *   **Implementação do `forwardRef`:** Utilização do `forwardRef` para expor o elemento `dialogElement` ao componente pai.
 *   **Definição da Interface `ModalHandle`:** Criação de uma interface para lidar com os métodos de controle da modal.
+*   **Utilização de Context API:** Implementação de Context API tipado com TypeScript para gerenciamento de estados globais.
+*   **Implementação de Hooks Personalizados:** Criação de hooks personalizados para reutilização de lógica e melhor organização do código.
+*   **Tipagem Forte com TypeScript:** Aplicação de tipagem forte em todos os componentes e contextos para garantir a segurança e a manutenibilidade do código.
+*   **Utilização de Utilitários do TypeScript:** Uso de `Omit`, `Record` e `Partial` para manipulação de tipos e interfaces.
 
 ## Estrutura do Código
 
@@ -23,6 +27,8 @@ O código está organizado da seguinte forma:
 *   `components/`: Inclui os componentes React reutilizáveis.
 *   `Modal/`: Componente específico da modal, com seus respectivos arquivos de estilo e lógica.
 *   `index.tsx`: Arquivo principal do componente modal, onde a refatoração é realizada.
+*   `context/`: Contém os contextos da aplicação, tipados com TypeScript.
+*   `hooks/`: Inclui os hooks personalizados utilizados na aplicação.
 
 ## Como Executar o Projeto
 
@@ -51,7 +57,6 @@ Para executar este projeto, siga as instruções abaixo:
     ```bash
     npm run dev
     ```
-
 5.  Inicie o servidor para a api rodar localmente:
     ```bash
     npm run server
@@ -63,4 +68,3 @@ Para executar este projeto, siga as instruções abaixo:
 ## Contribuição
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir *issues* e enviar *pull requests* para melhorar este projeto.
-
