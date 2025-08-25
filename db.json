@@ -1,11 +1,8 @@
 {
   "usuarios": [
-    {
-      "id": "bf58",
-      "nome": "Leonardo Taborda",
-      "renda": "4300",
-      "orcamentoDiario": 143.33333333333334
-    }
+  
   ],
-  "transacoes": []
+  "transacoes": [
+   
+  ]
 }
