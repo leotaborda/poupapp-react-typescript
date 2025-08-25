@@ -26,7 +26,7 @@ const BarraLateral = () => {
     <Sidebar>
       <Imagem src={logo} alt="Logotipo da poupeapp" />
       <Rodape>
-        Desenvolvido por Alura. Projeto fictício sem fins comerciais.
+        © {new Date().getFullYear()} - Desenvolvido por leotaborda
       </Rodape>
     </Sidebar>
   );
