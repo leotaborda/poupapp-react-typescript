@@ -6,5 +6,30 @@
       "renda": "4000"
     }
   ],
-  "transacoes": []
+  "transacoes": [
+    {
+      "id": "07ef",
+      "nome": "Compra saia",
+      "valor": "500",
+      "tipo": "despesa",
+      "categoria": "Roupas",
+      "data": "2025-08-25"
+    },
+    {
+      "id": "1543",
+      "nome": "McDonald's",
+      "valor": "91",
+      "tipo": "despesa",
+      "categoria": "Alimentação",
+      "data": "2025-08-23"
+    },
+    {
+      "id": "65d1",
+      "nome": "Pagamento",
+      "valor": "1200",
+      "tipo": "receita",
+      "categoria": "Pagamento",
+      "data": "2025-08-25"
+    }
+  ]
 }
